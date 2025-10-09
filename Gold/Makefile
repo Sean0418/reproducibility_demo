@@ -1,12 +1,12 @@
 # Gold automation Makefile
 
 PY=python
-NB=Gold/discussion_demo.ipynb
-NB_OUT=Gold/discussion_demo.executed.ipynb
-REQ=Gold/artifacts/requirements-gold.txt
-DATA=Gold/Data/simple_dataset.csv
-MODEL=Gold/artifacts/linear_model.pt
-MANIFEST=Gold/artifacts/manifest.json
+NB=discussion_demo.ipynb
+NB_OUT=discussion_demo.executed.ipynb
+REQ=artifacts/requirements-gold.txt
+DATA=Data/simple_dataset.csv
+MODEL=artifacts/linear_model.pt
+MANIFEST=artifacts/manifest.json
 
 .PHONY: all install run clean
 
@@ -21,7 +21,7 @@ install:
 run:
 	@echo "Executing notebook to produce data, model, env, and manifest..."
 	jupyter nbconvert --to notebook --execute $(NB) --output $(NB_OUT)
-	@echo "Notebook executed. Artifacts should be in Gold/artifacts and data in Gold/Data."
+	@echo "Notebook executed. Artifacts are in artifacts/ and data in Data/."
 
 clean:
 	rm -f $(NB_OUT)

@@ -1,9 +1,9 @@
 # Platinum automation Makefile (One Button compatible)
 
 PY=python
-NB=Platinum/discussion_demo.ipynb
-NB_OUT=Platinum/discussion_demo.executed.ipynb
-REQ=Gold/artifacts/requirements-gold.txt
+NB=discussion_demo.ipynb
+NB_OUT=discussion_demo.executed.ipynb
+REQ=../Gold/artifacts/requirements-gold.txt
 
 .PHONY: all install run clean
 

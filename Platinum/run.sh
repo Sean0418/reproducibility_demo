@@ -2,9 +2,11 @@
 set -euo pipefail
 
 PY=python
-REQ="Gold/artifacts/requirements-gold.txt"
-NB="Platinum/discussion_demo.ipynb"
-OUT="Platinum/discussion_demo.executed.ipynb"
+REQ="../Gold/artifacts/requirements-gold.txt"
+NB="discussion_demo.ipynb"
+OUT="discussion_demo.executed.ipynb"
+
+cd "$(dirname "$0")"
 
 $PY -m pip install --upgrade pip
 if [ -f "$REQ" ]; then
