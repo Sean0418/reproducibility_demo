@@ -1,0 +1,27 @@
+{
+  "data": {
+    "path": "Data/simple_dataset.csv",
+    "sha256": "97453361d2d989219beb6531f35e3dce6997db5434788a0fc653d427b25dd953",
+    "doi": "10.5281/zenodo.17298664"
+  },
+  "model": {
+    "path": "artifacts/linear_model.pt",
+    "sha256": "4f0545647b525c6bb08071d681218b8aeea8690c84b0b58db15dd480057662d8",
+    "doi": "10.5281/zenodo.17298751"
+  },
+  "metrics": {
+    "mse": 76.96940612792969,
+    "r2": 0.3643046021461487
+  },
+  "env": {
+    "requirements": "artifacts/requirements-gold.txt",
+    "python": "3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.3.3",
+    "torch": "2.8.0"
+  },
+  "git": {
+    "commit": "479336dcdf51af992b2906ce28ac36f99e0e2902",
+    "branch": "main"
+  },
+  "runtime_seconds": 1.098
+}
